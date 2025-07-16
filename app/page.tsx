@@ -41,8 +41,8 @@ export default function HomePage() {
                     <h2>Your Trusted Partner for Flawless Walls</h2>
                     <p>
                         At JOSS DRYWALL, we combine years of experience with meticulous attention to detail. Whether
-                        it's a new construction project, a residential remodel, or a simple repair, we deliver results
-                        that are built to last.
+                        it&apos;s a new construction project, a residential remodel, or a simple repair, we deliver
+                        results that are built to last.
                     </p>
                 </div>
             </section>
@@ -83,7 +83,7 @@ export default function HomePage() {
 
             <section className={`${styles.finalCta} container`}>
                 <h2>Ready to Start Your Project?</h2>
-                <p>Let's discuss your needs. We provide clear communication and transparent pricing.</p>
+                <p>Let&apos;s discuss your needs. We provide clear communication and transparent pricing.</p>
                 <Link href='/contact' className='button-primary'>
                     Get Your Free Quote
                 </Link>

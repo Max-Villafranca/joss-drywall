@@ -42,7 +42,7 @@ export default function ServicesPage() {
 
             <section className={styles.ctaSection}>
                 <h2>Have a Project in Mind?</h2>
-                <p>We're ready to discuss the details and provide a clear, comprehensive estimate.</p>
+                <p>We&apos;re ready to discuss the details and provide a clear, comprehensive estimate.</p>
                 <Link href='/contact' className='button-primary'>
                     Get Your Free Quote
                 </Link>

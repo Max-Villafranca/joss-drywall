@@ -33,7 +33,7 @@ export function Gallery({ imagePaths }: GalleryProps) {
 
         window.addEventListener('keydown', handleKeyDown)
         return () => window.removeEventListener('keydown', handleKeyDown)
-    }, [selectedIndex])
+    }, [selectedIndex, handleNext, handlePrev])
 
     if (!imagePaths || imagePaths.length === 0) {
         return <p>There are currently no images in the gallery. Check back soon!</p>

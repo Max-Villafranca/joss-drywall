@@ -4,6 +4,10 @@ import { db } from './db'
 import { revalidatePath } from 'next/cache'
 import { Resend } from 'resend'
 
+type FormState = {
+    message: string
+}
+
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 function validateEmail(email: string): boolean {
@@ -11,7 +15,7 @@ function validateEmail(email: string): boolean {
     return re.test(email)
 }
 
-export async function createInquiry(prevState: any, formData: FormData) {
+export async function createInquiry(prevState: FormState, formData: FormData) {
     const name = formData.get('name') as string
     const email = formData.get('email') as string
     const phone = formData.get('phone') as string
@@ -55,7 +59,7 @@ export async function createInquiry(prevState: any, formData: FormData) {
         await resend.emails.send({
             from: 'inquiry@forms.max-villafranca.dev',
             to: 'jossdriwall@gmail.com',
-            subject: `Joss Drywall - New Inquiry from ${name}`,
+            subject: `New Inquiry from ${name}`,
             html: emailHtml,
         })
     } catch (error) {
