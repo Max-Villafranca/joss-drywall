@@ -1,0 +1,92 @@
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.galleryItem {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+}
+
+.galleryItem:hover {
+    transform: scale(1.03);
+}
+
+.galleryItem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1002;
+    transition: opacity 0.2s;
+    opacity: 0.8;
+}
+
+.closeButton:hover {
+    opacity: 1;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 1rem 0.5rem;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.navButton:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prevButton {
+    left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.nextButton {
+    right: 10px;
+    border-radius: 5px 0 0 5px;
+}

@@ -1,0 +1,85 @@
+.footer {
+    background-color: var(--color-light-gray);
+    color: var(--color-charcoal);
+    padding-top: 3rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.footerContainer {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footerColumn h5,
+.footerColumn h4 {
+    font-family: var(--font-lora);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footerColumn ul {
+    list-style: none;
+}
+
+.footerColumn li {
+    margin-bottom: 0.5rem;
+}
+
+.footerColumn a {
+    color: var(--color-red);
+}
+
+.footerColumn a:hover {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--color-charcoal);
+    text-decoration: none;
+}
+
+.logo h4 {
+    margin: 0;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.subFooter {
+    background-color: #e9ecef;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.subFooter p {
+    margin: 0;
+    display: inline;
+}
+
+.subFooter a {
+    color: var(--color-blue);
+    margin-left: 1rem;
+}
+
+/* Add this to the end of app/components/Footer.module.css */
+
+@media (max-width: 576px) {
+    .subFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

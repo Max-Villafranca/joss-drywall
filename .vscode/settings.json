@@ -1,0 +1,17 @@
+{
+    "hide-files.files": [
+        ".next",
+        ".vscode",
+        "node_modules"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".next": true,
+        ".vscode": true,
+        "node_modules": true
+    }
+}

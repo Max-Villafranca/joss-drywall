@@ -1,0 +1,31 @@
+.form {
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    font-family: var(--font-inter);
+    font-size: 1rem;
+}
+
+.formMessage {
+    margin-top: 1rem;
+    color: var(--color-blue);
+    font-weight: 500;
+}
